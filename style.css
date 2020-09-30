@@ -1,0 +1,135 @@
+body {
+	margin: 54px 0 auto 0;
+	font-size: 15px;
+	font-family: "Open Sans";
+	/*overflow: hidden;*/
+}
+
+html {
+	background: url("https://images.pexels.com/photos/96380/pexels-photo-96380.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+
+
+	/*=========NAVBAR=========*/
+
+
+.navbar {
+	display: flex;
+	background-color: #303030;
+	padding: 15px;
+	box-shadow: 0 5px 5px -2px black;
+
+}
+
+.navbar > a {
+	font-size: 1.2em;
+	color: darkgray;
+	text-decoration: none;
+	padding: 0 0;
+	margin: 0 20px;
+}
+
+.navbar > a:hover {
+	color: white;
+	box-shadow: 0 2px 2px -2px darkgray;
+}
+
+#push {
+	margin-left: auto;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+
+
+
+	/*=========COVER=========*/
+
+
+.cover {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*height: 100vh;*/
+	min-height: calc(100vh - 20px);
+	/*background: url("https://images.pexels.com/photos/96380/pexels-photo-96380.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") no-repeat center center fixed;
+	background-size: cover;*/
+}
+
+.naglowek {
+	font-size: 2em;
+	color: white;
+	text-align: center;
+	background: rgba(30, 30, 30, 0.85);
+	padding: 15px;
+	border-radius: 3px;
+}
+
+p {
+	color: white;
+	background: rgba(30, 30, 30, 0.85);
+	padding: 10px;
+	border-radius: 3px;
+	font-size: 1.1em;
+}
+
+.coverbox {
+	max-width: 70%;
+}
+
+
+
+
+	/*=========GRID=========*/
+
+
+.grid {
+	display: grid;
+	/*grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));*/
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	/*grid-gap: 3px;*/
+	background-color: rgba(30, 30, 30, 0.9);
+	padding-top: 20px;
+	margin: 0;
+}
+
+.box > img {
+	width: 100%;
+}
+
+.box {
+	padding: 20px;
+	margin: 30px;
+	background-color: rgb(30, 30, 30);
+	filter: grayscale(0.7);
+	transition: all 0.3s linear;
+}
+
+.box:hover {
+	filter: none;
+	box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+	transform: scale(1.05);
+}
+
+
+
+
+
+	/*=========FOOTER=========*/
+
+
+footer {
+	background-color: rgb(20, 20, 20);
+	color: darkgray;
+	text-align: center;
+	box-shadow: 5px 0 5px 5px rgb(20, 20, 20);
+}
